@@ -1,0 +1,28 @@
+version: "3"
+services:
+  joomla:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    env_file:
+      - .docker.env
+    depends_on:
+      - mariadb
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
+  mariadb:
+    image: mariadb:10.4
+    ports:
+      - 13306:3306
+    volumes:
+      - mariadb:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: joomla
+      MYSQL_USER: joomla
+      MYSQL_PASSWORD: secret
+volumes:
+  mariadb:
+    driver: local
