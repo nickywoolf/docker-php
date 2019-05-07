@@ -1,6 +1,6 @@
 FROM php:7.2-apache-stretch
 
-RUN docker-php-ext-install pdo_mysql opcache \
+RUN docker-php-ext-install mysqli pdo_mysql opcache \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug \
     && a2enmod rewrite
