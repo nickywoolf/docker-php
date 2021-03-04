@@ -2,4 +2,4 @@
 
 1. Clone repository
 1. Copy .docker.env.sample to .docker.env
-1. Run `$ docker-composer up -d --build`
+1. Run `$ docker-compose up -d --build`
