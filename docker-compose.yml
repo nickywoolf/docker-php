@@ -11,7 +11,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - .:/var/www/html
+      - ./public:/var/www/html
   mariadb:
     image: mariadb:10.4
     ports:
