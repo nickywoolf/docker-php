@@ -7,7 +7,7 @@
 
 ---
 
-Database host: mariadb
-Database name: joomla
-Database user: joomla
-Database password: secret
+- Database host: mariadb
+- Database name: joomla
+- Database user: joomla
+- Database password: secret
