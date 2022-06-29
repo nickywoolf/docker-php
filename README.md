@@ -7,7 +7,16 @@
 
 ---
 
+Credentials used for connecting local website to database.
+
 - Database host: mariadb
 - Database name: joomla
 - Database user: joomla
 - Database password: secret
+
+---
+
+Configuration for connecting to database from your computer.
+
+- Database host: 127.0.0.1
+- Database port: 13306
