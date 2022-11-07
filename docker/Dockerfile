@@ -1,4 +1,4 @@
-FROM php:7.4-apache-buster
+FROM php:8.0-apache-buster
 
 RUN apt-get update -y \
     && apt-get install -y \
